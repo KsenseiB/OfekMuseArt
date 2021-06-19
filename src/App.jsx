@@ -7,6 +7,10 @@ import { Portfolio } from './cmps/Portfolio.jsx';
 import { About } from './cmps/About.jsx';
 import { Modeling } from './cmps/Modeling.jsx';
 import { Contact } from './cmps/Contact.jsx';
+import { Fantasy } from './cmps/galleries/Fantasy.jsx';
+import { Backstage } from './cmps/galleries/Backstage.jsx';
+import { Canvas } from './cmps/galleries/Canvas.jsx';
+import { Family } from './cmps/galleries/Family.jsx';
 import { Footer } from './cmps/Footer.jsx';
 
 function App() {
@@ -16,11 +20,15 @@ function App() {
         <Header />
         <main className="main">
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/modeling" component={Modeling} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/" component={Home} />
+          <Route exact={true} path="/about" component={About} />
+          <Route exact={true} path="/modeling" component={Modeling} />
+          <Route exact={true} path="/contact" component={Contact} />
+          <Route exact={true} path="/portfolio/backstage" component={Backstage} />
+          <Route exact={true} path="/portfolio/canvas" component={Canvas} />
+          <Route exact={true} path="/portfolio/family" component={Family} />
+          <Route exact={true} path="/portfolio/fantasy" component={Fantasy} />
+          <Route exact={true} path="/portfolio" component={Portfolio} />
+          <Route exact={true} path="/" component={Home} />
         </Switch>
         </main>
         <Footer />

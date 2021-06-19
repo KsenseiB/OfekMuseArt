@@ -7,16 +7,16 @@ export function Header() {
       <h1 className="main-title">Ofek Muse Art</h1>
       <nav className="main-nav container">
         <ul>
-          <li class="nav-link">
+          <li className="nav-link">
             <Link to="/about">About</Link>
           </li>
-          <li class="nav-link">
+          <li className="nav-link">
             <Link to="/contact">Contact</Link>
           </li>
-          <li class="nav-link">
+          <li className="nav-link">
             <Link to="/portfolio">Portfolio</Link>
           </li>
-          <li class="nav-link">
+          <li className="nav-link">
             <Link to="/modeling">Modeling</Link>
           </li>
         </ul>

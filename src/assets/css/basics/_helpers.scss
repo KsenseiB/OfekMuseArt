@@ -15,6 +15,12 @@
   &.align-center {
     align-items: center;
   }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.no-wrap {
+    flex-wrap: nowrap;
+  }
 }
 
 // Media helpers

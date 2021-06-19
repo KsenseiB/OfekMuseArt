@@ -1,11 +1,25 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html,
-body {
+
+html, body, div, img {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,body {
+  height: 100vh;
+  font-family: 'Assistant', sans-serif;
+  font-family: 'Questrial', sans-serif;
+  color: rgb(231, 231, 231);
+  user-select: none;
 }
 
 h1,
@@ -16,4 +30,5 @@ h5,
 h6,
 a {
   margin: 0;
+  padding: 0;
 }

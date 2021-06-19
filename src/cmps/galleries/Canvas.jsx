@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 export function Canvas() {
     return (
-<div className="canvas">
-   <h2>Canvas</h2>
-
+<div className="gallery gallery-bd-canvas">
+   <h2>Body Canvas</h2>
+{/* 
         <img className="canvas-img" src="https://i.ibb.co/2hM671c/13403202-1006217619433259-1202667168033753341-o.jpg"
             alt="22" />
         <img className="canvas-img" src="https://i.ibb.co/jk1bDQf/13392151-1006217742766580-9216039713367229837-o.jpg"
@@ -23,7 +22,7 @@ export function Canvas() {
         <img className="canvas-img" src="https://i.ibb.co/WtbYmRF/11779864-852497808138575-4524725393581655722-o.jpg"
             alt="39" />
         <img className="canvas-img" src="https://i.ibb.co/7pB8svb/11393608-825033687551654-7026388850598519361-o.jpg"
-            alt="30" />
+            alt="30" /> */}
 
 </div>
     )

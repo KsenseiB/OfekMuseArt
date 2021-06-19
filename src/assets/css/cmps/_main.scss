@@ -1,44 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --dark: #000;
-  --light: #fff;
-}
-
-html {
-  // height: 100vh;
-  font-family: 'Assistant', sans-serif;
-  font-family: 'Questrial', sans-serif;
-}
-
 .app-container {
-  position: relative;
+  // position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: url('https://i.ibb.co/rQnVNjH/10507157-673922522662772-1718279570260894703-o.jpg')
+  padding: 15px;
+  // justify-content: center;
+  background: url("https://i.ibb.co/rQnVNjH/10507157-673922522662772-1718279570260894703-o.jpg")
     no-repeat center center fixed;
   background-size: cover;
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(19, 19, 19, 0.8);
   width: 90%;
   height: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  position: 400;
+  padding: 15px;
   z-index: 10;
-  color: var(--light);
-  font-weight: lighter;
-  letter-spacing: 1.1px;
-  line-height: 2.5rem;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  // position: 400;
+  // margin: 0 auto;
+  // color: var(--light);
+  // font-weight: lighter;
+  // letter-spacing: 1.1px;
+  // line-height: 2.5rem;
+  // justify-content: center;
+  // align-items: center;
+  
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 15px;
+  }
+
 }
