@@ -1,9 +1,13 @@
 import React from "react";
+import { PortfolioNav } from '../PortfolioNav.jsx';
+// import photos from '../../services/imgs-data.js'
+//  const ImgGallary = () => <Gallery photos={photos} direction={"column"} />;
 
 
 export function ImgContainer() {
   return (
     <>
+          <PortfolioNav />
       <div className="gallery-container flex wrap">
         <img src="https://i.ibb.co/3MYn4VK/30.jpg" alt="30" />
         <img src="https://i.ibb.co/MccYYR4/29.jpg" alt="29" />

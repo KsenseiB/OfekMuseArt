@@ -18,3 +18,22 @@
             border-radius: 2px;
     }
 }
+.portfolio-nav{
+    vertical-align: center;
+    margin-bottom: 15px;
+
+}
+.tag-filter {
+    font-size: 0.8rem;
+    vertical-align: center;
+
+    form{
+        input[type="checkbox"]{
+            margin-left: 15px;
+            margin-right: 3px;
+            vertical-align: center;
+
+        }
+
+    }
+}
