@@ -53,8 +53,8 @@ export default function Portfolio () {
       <div className="container">
         { filteredImages.map((img, index) => (
           <div key={ index }>
-            <a href={ `imgs/allPhotos/${ img.name }` }>
-              <img src={ `imgs/allPhotos/${ img.name }` } alt={ img.tag } />
+            <a href={ `/imgs/allPhotos/${ img.name }` }>
+              <img src={ `/imgs/allPhotos/${ img.name }` } alt={ img.tag } />
             </a>
           </div>
         )) }
