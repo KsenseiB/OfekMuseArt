@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <style>
+      .body {
+        margin-top: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        justify-content: center;
+        align-content: center;
+        grid-gap: 10px;
+      }
+
+      .grid img {
+        width: 400px;
+        height: auto;
+        align-self: center;
+        cursor: pointer;
+        object-fit: contain;
+      }
+
+      #lightbox {
+        position: fixed; /*make the img stay in center even when scrolling up&down*/
+        z-index: 1000;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+      }
+
+      #lightbox.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #lightbox img {
+        max-width: 90%;
+        max-height: 80%;
+      }
+    </style>
+
+    <title>Ofek Fantasy</title>
+  </head>
+
+  <body>
+    <img
+      class="top-fantasy horizontal"
+      style="width: 100%;"
+      src="images/5fantasies.jpg"
+    />
+    <div class="grid">
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/3.jpg"
+      />
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/7.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/10.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/11.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/13.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/18.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/23.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/24.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/25.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img"
+        src="FantasyGallary/30.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/2.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/4.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/5.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/6.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/8.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/9.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/12.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/14.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/15.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/16.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/17.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/19.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/20.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/21.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/22.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/26.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/27.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/28.jpg"
+      />
+
+      <img
+        class="fantasy gallary-img horizontal"
+        src="FantasyGallary/29.jpg"
+      />
+    </div>
+  </body>
+
+  <script>
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    document.body.appendChild(lightbox);
+    const images = document.querySelectorAll('img');
+    images.forEach((image) => {
+      image.addEventListener('click', (e) => {
+        lightbox.classList.add('active');
+        const img = document.createElement('img');
+        //set the enlarged img src same as the clicked one
+        img.src = image.src;
+        //when the lightbox has a child
+        while (lightbox.firstChild) {
+          lightbox.removeChild(lightbox.firstChild);
+        }
+        // and then push a new one into the div
+        lightbox.appendChild(img);
+      });
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      // if we click on smthing that's not the lightbox=e.target, what we click on !== is not equal to e.currentTarget (what we added the event listener to=lightbox) -> return
+      if (e.target !== e.currentTarget) return;
+      lightbox.classList.remove('active');
+    });
+  </script>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body Canvas</title>
+    <style>
+        .canvas-container {
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .canvas-img{
+            display: inline-block;
+            max-width: 100%;
+            max-height: 10rem;
+            object-fit: cover;
+            flex-grow: 2;
+            padding: .2rem;
+            transition: all 0.1s linear;
+            
+        }
+
+        .canvas-img-hover {
+            box-shadow: rgba(0, 0, 0, 0.8) inset;
+            transform: scale(3);
+            cursor: pointer;
+        }
+    </style>
+    <script defer>
+
+    </script>
+
+</head>
+
+<body>
+    <div class="grid">
+    <div class="canvas-container">
+        <img class="canvas-img" src="https://i.ibb.co/x8Q9xnM/86185820-2638158886239116-7228649797069045760-o.jpg">
+        <img class="canvas-img" src="https://i.ibb.co/GvTTm6Z/85191837-2638159186239086-8333398665016115200-o.jpg"
+            alt="1">
+        <img class="canvas-img" src="https://i.ibb.co/MRTRs3m/85144697-2638159019572436-5677242798697349120-o.jpg"
+            alt="2">
+        <img class="canvas-img" src="https://i.ibb.co/qgRBZXs/83935463-2638158669572471-4546805177302122496-o.jpg"
+            alt="3">
+        <img class="canvas-img" src="https://i.ibb.co/YX3dv0V/83278209-2608421979212807-1004387740076212224-o.jpg"
+            alt="4">
+        <img class="canvas-img" src="https://i.ibb.co/jGLkYsy/83215151-2608420862546252-2593347767820615680-o.jpg"
+            alt="5">
+        <img class="canvas-img" src="https://i.ibb.co/HCsdH4z/28335892-1557051407683208-6723929646220140621-o.jpg"
+            alt="6">
+        <img class="canvas-img" src="https://i.ibb.co/7VT9M2h/28061004-1557051361016546-6661281526590361750-o.jpg"
+            alt="7">
+        <img class="canvas-img" src="https://i.ibb.co/LSc4M68/18673275-1315792808475737-2937481294272067493-o.jpg"
+            alt="8">
+        <img class="canvas-img" src="https://i.ibb.co/Vvb0RRw/18673247-1315792371809114-4001466437850362132-o.jpg"
+            alt="9">
+        <img class="canvas-img" src="https://i.ibb.co/kg20dD7/18623602-1315790635142621-1044951961016359851-o.jpg"
+            alt="10">
+        <img class="canvas-img" src="https://i.ibb.co/N662mDs/18623366-1315792515142433-4501698396992896803-o.jpg"
+            alt="11">
+        <img class="canvas-img" src="https://i.ibb.co/YdgqchL/17349768-1242838665771152-2050710466683051145-o.jpg"
+            alt="12">
+        <img class="canvas-img" src="https://i.ibb.co/jGS0QJG/17310936-1242841069104245-4772588535261879693-o.jpg"
+            alt="13">
+        <img class="canvas-img" src="https://i.ibb.co/CJ4stXx/16836299-1224585250929827-8878262400312900593-o.jpg"
+            alt="14">
+        <img class="canvas-img" src="https://i.ibb.co/Yhb5Nfw/16835873-1224578297597189-7228524760939581008-o.jpg"
+            alt="15">
+        <img class="canvas-img" src="https://i.ibb.co/5Y08qpN/16797212-1224582074263478-6324420197328117391-o.jpg"
+            alt="16">
+        <img class="canvas-img" src="https://i.ibb.co/LCrgZrv/14853240-1108678799187140-1257589991865544951-o.jpg"
+            alt="17">
+        <img class="canvas-img" src="https://i.ibb.co/z76RM4f/14114853-1052937358094618-201475821734303310-o.jpg"
+            alt="18">
+        <img class="canvas-img" src="https://i.ibb.co/7WZ9N07/14067929-1052937378094616-6698937797872362854-o.jpg"
+            alt="19">
+        <img class="canvas-img" src="https://i.ibb.co/1ZBHhGd/14066412-1052937518094602-6934702413502354806-o.jpg"
+            alt="20">
+        <img class="canvas-img" src="https://i.ibb.co/kmnLWmY/13528116-1019222474799440-6483411983850781453-o.jpg"
+            alt="21">
+        <img class="canvas-img" src="https://i.ibb.co/2hM671c/13403202-1006217619433259-1202667168033753341-o.jpg"
+            alt="22">
+        <img class="canvas-img" src="https://i.ibb.co/jk1bDQf/13392151-1006217742766580-9216039713367229837-o.jpg"
+            alt="23">
+        <img class="canvas-img" src="https://i.ibb.co/LRqBphg/12891071-965827396805615-7240841100441409141-o.jpg"
+            alt="24">
+        <img class="canvas-img" src="https://i.ibb.co/XC8mXXn/12593838-965827536805601-3235464584767551529-o.jpg"
+            alt="25">
+        <img class="canvas-img" src="https://i.ibb.co/h23Jn7n/12068461-959754587412896-7201129263140858783-o.jpg"
+            alt="26">
+        <img class="canvas-img" src="https://i.ibb.co/MVbk3Yc/12027367-959794234075598-8293530067047290522-o.jpg"
+            alt="27">
+        <img class="canvas-img" src="https://i.ibb.co/fGdpwrm/11807611-852422331479456-7104781345294778663-o.jpg"
+            alt="28">
+        <img class="canvas-img" src="https://i.ibb.co/WtbYmRF/11779864-852497808138575-4524725393581655722-o.jpg"
+            alt="39">
+        <img class="canvas-img" src="https://i.ibb.co/7pB8svb/11393608-825033687551654-7026388850598519361-o.jpg"
+            alt="30">
+            </div>
+        <img class="canvas-topimg" style="width: 100%;"
+        src="https://i.ibb.co/SmQvcZF/12474033-959148517473503-4129634217776519813-o.jpg" alt="0">
+    </div>
+</body>
+</html>
