@@ -26,14 +26,7 @@ export default function App() {
             <Route path="/modeling" element={<Modeling />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            {/* <Route
-              exact={true}
-              path="/portfolio/backstage"
-              component={Backstage}
-            />
-            <Route exact={true} path="/portfolio/canvas" component={Canvas} />
-            <Route exact={true} path="/portfolio/family" component={Family} />
-            <Route exact={true} path="/portfolio/fantasy" component={Fantasy} /> */}
+
           </Routes>
         </main>
         <Footer />
