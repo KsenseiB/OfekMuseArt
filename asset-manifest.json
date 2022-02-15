@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/OfekMuseArt/static/css/main.69b94466.chunk.css",
-    "main.js": "/OfekMuseArt/static/js/main.003d1133.chunk.js",
-    "main.js.map": "/OfekMuseArt/static/js/main.003d1133.chunk.js.map",
+    "main.js": "/OfekMuseArt/static/js/main.dcb87223.chunk.js",
+    "main.js.map": "/OfekMuseArt/static/js/main.dcb87223.chunk.js.map",
     "runtime-main.js": "/OfekMuseArt/static/js/runtime-main.c8eb40ef.js",
     "runtime-main.js.map": "/OfekMuseArt/static/js/runtime-main.c8eb40ef.js.map",
     "static/js/2.f7e2fbc3.chunk.js": "/OfekMuseArt/static/js/2.f7e2fbc3.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.c8eb40ef.js",
     "static/js/2.f7e2fbc3.chunk.js",
     "static/css/main.69b94466.chunk.css",
-    "static/js/main.003d1133.chunk.js"
+    "static/js/main.dcb87223.chunk.js"
   ]
 }
