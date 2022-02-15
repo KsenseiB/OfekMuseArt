@@ -1,13 +1,10 @@
 import React from "react";
-import { PortfolioNav } from '../PortfolioNav.jsx';
 // import photos from '../../services/imgs-data.js'
 //  const ImgGallary = () => <Gallery photos={photos} direction={"column"} />;
 
-
-export function ImgContainer() {
+export default function ImgContainer() {
   return (
     <>
-          <PortfolioNav />
       <div className="gallery-container flex wrap">
         <img src="https://i.ibb.co/3MYn4VK/30.jpg" alt="30" />
         <img src="https://i.ibb.co/MccYYR4/29.jpg" alt="29" />
@@ -39,7 +36,7 @@ export function ImgContainer() {
         <img src="https://i.ibb.co/5cc00vN/3.jpg" alt="3" />
         <img src="https://i.ibb.co/JBxtzPF/1.jpg" alt="1" />
         <img src="https://i.ibb.co/4Z1KGjf/2.jpg" alt="2" />
-      </div> 
+      </div>
     </>
   );
 }
